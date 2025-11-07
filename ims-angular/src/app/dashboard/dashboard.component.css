@@ -1,0 +1,106 @@
+/* Center and style the main dashboard container */
+.dashboard-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+  text-align: center; /* Center-align text for headings */
+}
+
+/* Style the dashboard title */
+.dashboard-title {
+  font-size: 2.5rem;
+  margin-bottom: 2rem;
+  color: #333;
+}
+
+/* Style the selection container */
+.selection-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+  margin: 2rem 0;
+}
+
+.selection-container label {
+  font-weight: bold;
+  color: #555;
+}
+
+.selection-container select {
+  padding: 0.5rem;
+  font-size: 1rem;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+.selection-container button {
+  padding: 0.5rem 1rem;
+  font-size: 1rem;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.selection-container button:hover {
+  background-color: #0056b3;
+}
+
+/* Style each chart container */
+.chart-container {
+  margin-bottom: 3rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center; /* Center charts and headings horizontally */
+}
+
+/* Style chart titles */
+.chart-title {
+  font-size: 1.8rem;
+  margin-bottom: 1.5rem;
+  color: #333;
+}
+
+/* Center ngx-charts components */
+ngx-charts-bar-vertical,
+ngx-charts-pie-chart {
+  display: block;
+  margin: 0 auto; /* Center charts horizontally */
+  max-width: 100%; /* Ensure charts don't overflow */
+}
+
+/* Style no-data message */
+.no-data {
+  font-size: 1.2rem;
+  color: #888;
+  margin-top: 1rem;
+}
+
+/* Responsive design for smaller screens */
+@media (max-width: 768px) {
+  .dashboard-container {
+    padding: 10px;
+  }
+
+  .dashboard-title {
+    font-size: 2rem;
+  }
+
+  .selection-container {
+    flex-direction: column;
+    gap: 0.5rem;
+  }
+
+  .chart-title {
+    font-size: 1.5rem;
+  }
+
+  /* Adjust chart size for smaller screens */
+  ngx-charts-bar-vertical,
+  ngx-charts-pie-chart {
+    max-width: 90vw;
+  }
+}
