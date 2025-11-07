@@ -13,6 +13,10 @@ A comprehensive web application for monitoring stock levels, processing transact
 
 **Tech Stack:** Java/Spring Boot (backend APIs and logic), Angular/TypeScript (responsive frontend), SQL database (for products/transactions), Mermaid for system diagrams.
 
+## Structure
+- **backend/src/**: Java/Spring Boot source (controllers, services, entities).
+- **ims-angular/**: Angular components, modules, and styles.
+
 
 <image-card alt="PFE Dashboard Preview" src="path/to/screenshot.png" ></image-card> <!-- Upload a screenshot later for that visual punch -->
 
@@ -20,6 +24,14 @@ A comprehensive web application for monitoring stock levels, processing transact
 - **Core Tech:** Java, Spring Boot, Angular, SQL, Git/GitHub.
 - **Hands-On:** Full project lifecycle—from requirements gathering to deployment—during a 4-month internship at Kromberg & Schubert.
 - Passionate about bridging backend reliability with intuitive UIs; excited for full-stack opportunities!
+
+- ## Quick Setup
+1. Clone the repo: `git clone https://github.com/abouelalaayoussef-cloud/Pfe-project.git`
+2. Backend: `cd pfe-inventory/backend && mvn spring-boot:run`
+3. Frontend: `cd pfe-inventory/ims-angular && ng serve`
+
+   
+
 
 ---
 
